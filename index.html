@@ -196,8 +196,8 @@
             cursor: pointer;
         }
 
-        /* Estilo para la sección Nosotros */
-        #nosotros {
+        /* Estilo para la sección Inicio */
+        #Inicio {
             background-color: white;
             padding: 40px;
             margin: 20px auto;
@@ -206,16 +206,16 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
         }
-        #nosotros h2 {
+        #Inicio h2 {
             color: #ff7e5f;
             font-size: 2em;
         }
-        #nosotros p {
+        #Inicio p {
             font-size: 1.2em;
             color: #333;
             line-height: 1.6;
         }
-        #nosotros .section-title {
+        #Inicio .section-title {
             font-size: 1.5em;
             font-weight: bold;
             color: #ff7e5f;
@@ -223,7 +223,7 @@
         }
 
         /* Estilo para otras secciones */
-        #productos, #servicios, #contacto, #cuenta {
+        #Moviles, #servicios, #contacto, #cuenta {
             background-color: white;
             padding: 40px;
             margin: 20px auto;
@@ -232,7 +232,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             position: relative;
         }
-        #productos h2, #servicios h2, #contacto h2, #cuenta h2 {
+        #Moviles h2, #servicios h2, #contacto h2, #cuenta h2 {
             color: #ff7e5f;
             font-size: 2em;
         }
@@ -285,8 +285,8 @@
         <h1>Bienvenidos a Tienda de Celulares JC</h1>
         <nav>
             <ul>
-                <li><a onclick="showSection('nosotros')">Nosotros</a></li>
-                <li><a onclick="showSection('productos')">Nuestros Productos</a></li>
+                <li><a onclick="showSection('Inicio')">Inicio</a></li>
+                <li><a onclick="showSection('Moviles')">Moviles</a></li>
                 <li><a onclick="showSection('servicios')">servicios</a></li>
                 <li><a onclick="showSection('contacto')">Contactos</a></li>
                 <li><a onclick="showSection('cuenta')">Mi Cuenta</a></li>
@@ -295,7 +295,7 @@
     </header>
 
     <div id="cart" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <h3><i class="fas fa-shopping-cart"></i> carrito de compras</h3>
+        <h3><i class="fas fa-shopping-cart"></i>compras</h3>
         <ul id="cart-items"></ul>
         <button onclick="checkout()">comprar</button>
         <button onclick="clearCart()">borrar</button>
@@ -332,9 +332,9 @@
         </div>
     </div>
 
-    <!-- Sección Nosotros -->
-    <div id="nosotros" class="hidden">
-        <span class="close-btn" onclick="closeSection('nosotros')">✖</span>
+    <!-- Sección Inicio -->
+    <div id="Inicio" class="hidden">
+        <span class="close-btn" onclick="closeSection('Inicio')">✖</span>
         <h2>¿Quiénes somos?</h2>
         <p>Somos una empresa que nació con la visión de ofrecer tecnología de vanguardia de manera rápida y accesible a través de una tienda 100% digital. Identificamos la necesidad de un espacio en línea donde los clientes pudieran comprar celulares, accesorios y servicios sin salir de casa, con precios competitivos y un servicio confiable..</p>
 
@@ -347,8 +347,8 @@
 
 
     <!-- Sección Productos -->
-    <div id="productos" class="hidden">
-        <span class="close-btn" onclick="closeSection('productos')">✖</span>
+    <div id="Moviles" class="hidden">
+        <span class="close-btn" onclick="closeSection('Moviles')">✖</span>
         <h2>Nuestros Productos</h2>
         <p>Descubre nuestra variedad de dispositivos móviles de las mejores marcas. Conoce nuestras promociones y ofertas exclusivas para cada modelo.</p>
         <div>
